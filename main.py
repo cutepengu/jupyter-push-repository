@@ -5,14 +5,17 @@ quit = False
 
 original_df = pd.read_csv('Deaths_in_Australia.csv')
 
+deaths_df = original_df.Show(rows=['Australia'])
+deaths_df.head()
 
-deaths_df = pd.read_csv('Deaths_in_Australia.csv')
+#deaths_df = pd.read_csv('Deaths_in_Australia.csv'
+  #                      )
                             
 
 def showOriginalData():
     print(original_df)
 
-def showUpdatedData():
+def showUpdatedData(): 
     print(deaths_df)
 
 def showCharts():
